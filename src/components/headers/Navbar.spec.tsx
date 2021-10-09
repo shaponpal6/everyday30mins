@@ -1,9 +1,9 @@
 import { render } from "@test";
 
-import { Header } from "./index";
+import { Navbar } from "./index";
 
-describe("Header component testing with testing-library", () => {
-  const { getByTestId } = render(<Header />);
+describe("Navbar component testing with testing-library", () => {
+  const { getByTestId } = render(<Navbar />);
 
   const container = getByTestId("container");
 

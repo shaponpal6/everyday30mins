@@ -1,12 +1,14 @@
 import React from "react";
 
-import { Header, Main, Footer, Cards } from "@components";
+import { Main, Footer, Cards } from "@components";
 import { Container } from "@components/containers";
+import { SiteLogo } from "@components/headers";
+
 
 const Contact: React.FC = () => {
   return (
     <Container>
-      <Header />
+      <SiteLogo />
       <Main />
       <Cards />
       <Footer />

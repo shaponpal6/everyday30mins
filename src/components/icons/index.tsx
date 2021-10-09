@@ -1,6 +1,7 @@
 export { default as Everyday30Mins } from './Everyday30Mins'
 export { default as GithubIcon } from './GithubIcon'
 export { default as LinkedinIcon } from './LinkedinIcon'
+export { default as MenuAlt2Icon } from './MenuAlt2Icon'
 export { default as MoonIcon } from './MoonIcon'
 export { default as NextjsIcon } from './NextjsIcon'
 export { default as PankodIcon } from './PankodIcon'
