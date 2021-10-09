@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Main, Footer, Cards } from "@components";
 import { HomeLayout } from "@components/layouts";
-import { BoxContainer, Container } from "@components/containers";
+import { BoxContainer, Container, PopOver } from "@components/containers";
 import { SiteLogo, Navbar } from "@components/headers";
 
 const Home: React.FC = () => {
+  const [thank, giveThank] = useState<boolean>(false);
+
   return (
     <HomeLayout>
     <BoxContainer header="true" headerComp={<SiteLogo />} >
@@ -16,6 +18,9 @@ const Home: React.FC = () => {
       <Cards />
       <Footer />
     </Container>
+    {!thank && 
+    <PopOver onCloseHandler={() => giveThank(true)}/>
+    }
     </HomeLayout>
   );
 };
