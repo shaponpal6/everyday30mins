@@ -1,12 +1,12 @@
 import React from "react";
-import { NextjsIcon } from "@components/icons";
+import { Everyday30Mins } from "@components/icons";
 
 export const Logo: React.FC = () => {
   return (
-    <NextjsIcon
+    <Everyday30Mins
       data-test="icon"
       className="text-white mx-auto"
-      width="96"
+      width="300"
       height="58"
     />
   );

@@ -5,6 +5,7 @@ import {
   TwitterIcon,
   YoutubeIcon,
   LinkedinIcon,
+  Everyday30Mins
 } from "@components/icons";
 
 export const Footer: React.FC = () => {
@@ -16,11 +17,11 @@ export const Footer: React.FC = () => {
         className="block mb-3"
         data-testid="pankod-logo"
       >
-        <PankodIcon
+        <Everyday30Mins
           data-test="icon"
           className="text-white mx-auto"
-          width="140"
-          height="28"
+          width="300"
+          height="70"
         />
       </a>
 

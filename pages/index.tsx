@@ -1,15 +1,21 @@
 import React from "react";
 
-import { Container, Header, Main, Footer, Cards } from "@components";
+import { Header, Main, Footer, Cards } from "@components";
+import { HomeLayout } from "@components/layouts";
+import { BoxContainer, Container } from "@components/containers";
 
 const Home: React.FC = () => {
   return (
-    <Container>
-      <Header />
+    <HomeLayout>
+    <BoxContainer header="true" headerComp={<Header />} >
+      {/* <Header /> */}
       <Main />
+    </BoxContainer>
+    <Container>
       <Cards />
       <Footer />
     </Container>
+    </HomeLayout>
   );
 };
 
