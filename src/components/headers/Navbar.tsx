@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
               </Link>
             </div>
             <div className="pl-4">
-              <Link href="/signin">
+              <Link href="/login">
                 <a>Sign In</a>
               </Link>
             </div>
