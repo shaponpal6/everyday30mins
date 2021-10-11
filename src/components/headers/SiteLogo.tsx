@@ -4,7 +4,7 @@ import { Logo } from "@components";
 
 const SiteLogo: React.FC = () => {
   return (
-    <div className="text-center pb-4" data-testid="container">
+    <div className="text-center" data-testid="container">
       <Logo />
     </div>
   );
