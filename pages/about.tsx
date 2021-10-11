@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Main, Footer, Cards } from "@components";
-import { Container } from "@components/containers";
-import { SiteLogo } from "@components/headers";
+import { HomeLayout } from "@components/layouts";
+import { BoxContainer, Container, PopOver, AnimationContainer } from "@components/containers";
+import { SiteLogo, Navbar } from "@components/headers";
+import { ParticlesAnimation } from "@components/animations";
 
+const About: React.FC = () => {
+  const [thank, giveThank] = useState<boolean>(false);
 
-const Contact: React.FC = () => {
   return (
-    <Container>
-      <SiteLogo />
+    <HomeLayout>
+    {/* <AnimationContainer> */}
+    <BoxContainer header="false" headerComp={<SiteLogo />} >
+      {/* <Navbar /> */}
       <Main />
+    </BoxContainer>
+    {/* <ParticlesAnimation/> */}
+    <Container>
       <Cards />
-      <Footer />
     </Container>
+    {!thank && 
+    <PopOver onCloseHandler={() => giveThank(true)}/>
+    }
+    {thank && <ParticlesAnimation/>}
+    {/* </AnimationContainer> */}
+    </HomeLayout>
   );
 };
 
-export default Contact;
+export default About;

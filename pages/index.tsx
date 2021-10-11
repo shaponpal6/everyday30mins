@@ -12,14 +12,13 @@ const Home: React.FC = () => {
   return (
     <HomeLayout>
     {/* <AnimationContainer> */}
-    <BoxContainer header="true" headerComp={<SiteLogo />} >
-      <Navbar />
+    <BoxContainer header="false" headerComp={<SiteLogo />} >
+      {/* <Navbar /> */}
       <Main />
     </BoxContainer>
     {/* <ParticlesAnimation/> */}
     <Container>
       <Cards />
-      <Footer />
     </Container>
     {!thank && 
     <PopOver onCloseHandler={() => giveThank(true)}/>

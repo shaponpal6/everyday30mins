@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import { Button } from "@components";
 
@@ -13,13 +14,9 @@ export const Main: React.FC = () => {
           Everyday 30 minutes to create a good habit.
         </p>
         <Button type="button">
-          <a
-            data-test="docs-btn-anchor"
-            href="#"
-            target="_blank"
-          >
-            Make your self Improvement Plan
-          </a>
+          <Link href="/mygoals" data-test="docs-btn-anchor">
+            <a>Make my Goals</a>
+          </Link>
         </Button>
       </div>
     </div>

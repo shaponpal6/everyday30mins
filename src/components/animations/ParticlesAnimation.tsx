@@ -63,12 +63,12 @@ const ParticlesAnimation:FC<Props> = ({ children , ...props}) => {
                   "enable": false,
                   "mode": []
                 },
-                "onDiv": {
-                  "selectors": [],
-                  "enable": false,
-                  "mode": [],
-                  "type": "circle"
-                },
+                // "onDiv": {
+                //   "selectors": [],
+                //   "enable": false,
+                //   "mode": [],
+                //   "type": "circle"
+                // },
                 "onHover": {
                   "enable": false,
                   "mode": [],
@@ -84,14 +84,14 @@ const ParticlesAnimation:FC<Props> = ({ children , ...props}) => {
                 "attract": {
                   "distance": 200,
                   "duration": 0.4,
-                  "easing": "ease-out-quad",
+                  // "easing": "ease-out-quad",
                   "factor": 1,
                   "maxSpeed": 50,
                   "speed": 1
                 },
-                "bounce": {
-                  "distance": 200
-                },
+                // "bounce": {
+                //   "distance": 200
+                // },
                 "bubble": {
                   "distance": 200,
                   "duration": 0.4,
@@ -145,7 +145,7 @@ const ParticlesAnimation:FC<Props> = ({ children , ...props}) => {
                   "factor": 100,
                   "speed": 1,
                   "maxSpeed": 50,
-                  "easing": "ease-out-quad"
+                  // "easing": "ease-out-quad"
                 },
                 "slow": {
                   "factor": 3,
@@ -239,7 +239,7 @@ const ParticlesAnimation:FC<Props> = ({ children , ...props}) => {
                 }
               },
               "destroy": {
-                "mode": "none",
+                // "mode": "none",
                 "split": {
                   "count": 1,
                   "factor": {

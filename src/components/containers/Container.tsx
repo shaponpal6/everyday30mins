@@ -4,7 +4,7 @@ interface Props {}
 
 const Container:FC<Props> = ({ children , ...props}) => {
   return (
-    <div className="min-h-screen flex flex-col" {...props}>{children}</div>
+    <div className="block min-h-screen w-full min-h-screen flex flex-col" {...props}>{children}</div>
   );
 };
 
