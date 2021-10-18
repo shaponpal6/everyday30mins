@@ -2,7 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 import { Logo } from "@components";
-import { MenuAlt2Icon } from "@components/icons";
+import { ActivitiesIcon, BadgeIcon, BooksIcon, ExerciseIcon, LevelIcon, MeditationIcon, MenuAlt2Icon, NewsIcon, PointsIcon } from "@components/icons";
 import { SiteLogo } from "@components/headers";
 
 interface Props {
@@ -11,31 +11,68 @@ interface Props {
 const Navbar: React.FC<Props> = ({...props}) => {
   return (
     <div className={props.className} data-testid="container">
-      <div className="flex py-2 px-10">
-        <div className="flex-1 flex items-center">
-          <MenuAlt2Icon stroke='white'/>
+      <div className="flex justify-between py-2 px-10">
+        <div className="flex items-center">
+          <h2 className="e30-logo">Everyday30mins</h2>
         </div>
-        <div className="flex-1 text-center text-white">
+        <div className="flex flex-center items-center gap-6 text-center text-white">
           <Link href="/">
-            <a><SiteLogo/></a>
+            <div className="text-center text-white ">
+              <div className="inline-block"><MeditationIcon/></div>
+              <div className="e30-text">Meditation</div> 
+            </div>
           </Link>
+          <Link href="/">
+            <div className="text-center text-white ">
+              <div className="inline-block"><ExerciseIcon/></div>
+              <div className="e30-text">Exercise</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="text-center text-white ">
+              <div className="inline-block"><NewsIcon/></div>
+              <div className="e30-text">Top News</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="text-center text-white ">
+              <div className="inline-block"><BooksIcon/></div>
+              <div className="e30-text">Books</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="text-center text-white">
+              <div className="inline-block"><ActivitiesIcon/></div>
+              <div className="e30-text">Today's Activities</div>
+            </div>
+          </Link>
+
         </div>
-        <div className="flex-1 float-right flex justify-end text-white items-center justify-items-end">
-          <div className="pl-4">
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </div>
-          <div className="pl-4">
-            <Link href="/services">
-              <a>Services</a>
-            </Link>
-          </div>
-          <div className="pl-4">
-            <Link href="/login">
-              <a>Sign In</a>
-            </Link>
-          </div>
+        <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-2 float-right flex justify-end text-white items-center justify-items-end">
+          <Link href="/">
+            <div className="text-center text-white ">
+              <div className="inline-block"><BadgeIcon/></div>
+              <div className="e30-text">Badge</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="text-center text-white ">
+              <div className="inline-block"><LevelIcon/></div>
+              <div className="e30-text">Level</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="text-center text-white ">
+              <div className="inline-block"><PointsIcon/></div>
+              <div className="e30-text">Point</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="text-center text-white ">
+              <div className="inline-block">ic</div>
+              <div className="e30-text">User</div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -7,8 +7,8 @@ interface Props {}
 
 const HomeLayout:FC<Props> = ({ children , ...props}) => {
   return (
-    <div className="block min-h-screen w-full min-h-screen flex flex-col" {...props}>
-      <Navbar className="bg-gray-800"/>
+    <div className="block min-h-screen w-full min-h-screen flex flex-col e30-bg" {...props}>
+      <Navbar className=""/>
       {children}
       <Footer/>
       </div>
