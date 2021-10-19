@@ -1,9 +1,9 @@
 import { render } from "@test";
 
-import { SiteLogo } from "./index";
+import { TasksMeasurementTable } from "./index";
 
-describe("SiteLogo component testing with testing-library", () => {
-  const { getByTestId } = render(<SiteLogo />);
+describe("TasksMeasurementTable component testing with testing-library", () => {
+  const { getByTestId } = render(<TasksMeasurementTable />);
 
   const container = getByTestId("container");
 

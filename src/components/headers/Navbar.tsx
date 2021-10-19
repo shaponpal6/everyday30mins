@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { Logo } from "@components";
 import { ActivitiesIcon, BadgeIcon, BooksIcon, ExerciseIcon, LevelIcon, MeditationIcon, MenuAlt2Icon, NewsIcon, PointsIcon } from "@components/icons";
-import { SiteLogo } from "@components/headers";
 
 interface Props {
   className?: string
@@ -13,6 +12,7 @@ const Navbar: React.FC<Props> = ({...props}) => {
     <div className={props.className} data-testid="container">
       <div className="flex justify-between py-2 px-10">
         <div className="flex items-center">
+          {/* <Logo/> */}
           <h2 className="e30-logo">Everyday30mins</h2>
         </div>
         <div className="flex flex-center items-center gap-6 text-center text-white">

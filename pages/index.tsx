@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import { Main, Footer, Cards } from "@components";
 import { HomeLayout } from "@components/layouts";
 import { BoxContainer, Container, PopOver, AnimationContainer } from "@components/containers";
-import { SiteLogo, Navbar } from "@components/headers";
+import {  Navbar } from "@components/headers";
 import { ParticlesAnimation } from "@components/animations";
+import { ServicesList } from "@components/services";
 
 const Home: React.FC = () => {
   const [thank, giveThank] = useState<boolean>(false);
@@ -12,13 +13,12 @@ const Home: React.FC = () => {
   return (
     <HomeLayout>
     {/* <AnimationContainer> */}
-    <BoxContainer header="false" headerComp={<SiteLogo />} >
-      {/* <Navbar /> */}
+    <BoxContainer >
       <Main />
     </BoxContainer>
     {/* <ParticlesAnimation/> */}
-    <Container>
-      <Cards />
+    <Container className="bg-white">
+      <ServicesList />
     </Container>
     {!thank && 
     <PopOver onCloseHandler={() => giveThank(true)}/>
