@@ -1,0 +1,1 @@
+export { default as GoodMorningModel } from './GoodMorningModel'

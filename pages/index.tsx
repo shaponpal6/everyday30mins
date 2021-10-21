@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import { Main, Footer, Cards } from "@components";
 import { HomeLayout } from "@components/layouts";
-import { BoxContainer, Container, PopOver, AnimationContainer } from "@components/containers";
+import { BoxContainer, Container, AnimationContainer } from "@components/containers";
+import { GoodMorningModel } from "@components/models";
 import {  Navbar } from "@components/headers";
 import { ParticlesAnimation } from "@components/animations";
 import { ServicesList } from "@components/services";
@@ -12,18 +13,21 @@ const Home: React.FC = () => {
 
   return (
     <HomeLayout>
+      
     {/* <AnimationContainer> */}
     <BoxContainer >
       <Main />
+      {thank && <ParticlesAnimation/>}
     </BoxContainer>
     {/* <ParticlesAnimation/> */}
-    <Container className="bg-white">
+    <Container customClass="bg-white">
       <ServicesList />
+      
     </Container>
     {!thank && 
-    <PopOver onCloseHandler={() => giveThank(true)}/>
+    <GoodMorningModel onCloseHandler={() => giveThank(true)}/>
     }
-    {thank && <ParticlesAnimation/>}
+    
     {/* </AnimationContainer> */}
     </HomeLayout>
   );

@@ -8,15 +8,11 @@ import { CurrentTasks, TasksMeasurementTable } from "@components/services";
 
 export const Main: React.FC = () => {
   return (
-    <div className="block w-full flex flex-col overflow-hidden h-full  rounded-2xl shadow-2xl border-2 border-gray-300">  
+    <div className="block w-full h-48 flex flex-col overflow-hidden h-full rounded-2xl shadow-2xl border-2 border-gray-300">  
       <div className="grid grid-cols-8 gap-4 px-8 py-4 text-white">
         {/* Left Side */}
         <div className="flex col-start-1 col-end-4">
           <HomeTab/>
-          {/* Left 1 */}
-         
-          {/* Left 2 */}
-
         </div>
         {/* Right Side */}
         <div className="col-end-9 col-span-3">
